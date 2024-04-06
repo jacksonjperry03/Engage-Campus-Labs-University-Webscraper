@@ -44,8 +44,8 @@ Before using this program, make sure you have Python installed on your system. Y
      python clubscraper.py <path_to_html_file> <base_url> [--output <output_csv_file>]
      ```
 
-     - Replace `<path_to_html_file>` with the path to the saved HTML file containing organization information.
-     - Go back to the homepage of the Campus Labs University site and copy the base URL. Replace `<base_url>` with this URL.
+     - Replace `<path_to_html_file>` with the path to the saved HTML file containing organization information. **(Remember to enclose the path in quotes)**
+     - Go back to the homepage of the Campus Labs University site and copy the base URL. Replace `<base_url>` with this URL. **(Remember to enclose the URL in quotes)**
      - Optionally, specify `--output` followed by the desired path to save the CSV file. If not specified, it will be saved in the "output" folder within the project directory.
 
 ### Selection of Fields
@@ -76,7 +76,7 @@ To run the `eventscraper.py` program, use the following command:
 ```bash
 python eventscraper.py <rss_url> [--output <output_file>]
 ```
-Replace `<rss_url>` with the RSS URL for the Engage site's event page, and `<output_file>` with the optional path to save the CSV file. If the `--output` argument is not provided, the CSV file will be saved in the "output" folder within the project directory by default.
+Replace `<rss_url>` with the RSS URL for the Engage site's event page **(Remember to enclose the URL in quotes)**, and `<output_file>` with the optional path to save the CSV file. If the `--output` argument is not provided, the CSV file will be saved in the "output" folder within the project directory by default.
 
 The fields chosen for eventscraper.py were selected based on my subjective relevance ranking of event details that are commonly available on the Engage site's event pages. These fields provide essential information about each event, including:
 
