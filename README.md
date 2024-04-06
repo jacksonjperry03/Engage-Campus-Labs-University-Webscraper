@@ -86,6 +86,41 @@ The fields chosen for eventscraper.py were selected based on my subjective relev
 
 These fields were chosen to capture key information about each event 😎
 
+### combinescraper.py
+
+The `combinescraper.py` script provides a convenient way to scrape both organization and event data from the Campus Labs University sites. It generates two separate CSV files, one for organizations (clubs) and another for events.
+
+To use the combined scraper, follow these steps:
+
+1. **Prepare HTML File (if you have not already done so):** 
+   - Open a web browser and navigate to the Campus Labs University site.
+   - Load the Organizations page and click the "Load More" button repeatedly until all organizations are loaded.
+   - Save the HTML file of the loaded page to your local system.
+
+2. **Run the Combined Scraper:**
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing the `combinescraper.py` script.
+   - Execute the following command:
+
+     ```bash
+     python combinescraper.py <html_file_path> <base_url> [--output <output_dir>]
+     ```
+
+     - Replace `<html_file_path>` with the file path to the saved HTML file containing organization information.
+     - Replace `<base_url>` with the base URL of the Campus Labs University site.
+     - Optionally, specify `--output` followed by the desired directory path to save the CSV files. If not specified, the CSV files will be saved in the "output" folder within the project directory by default.
+
+#### Output Files
+
+Upon successful execution, the combined scraper generates two CSV files:
+
+- `clubs.csv`: Contains information about organizations (clubs) including profile image URL, ID, name, email, description, contact details, and social media links.
+
+- `events.csv`: Contains details about events including ID, name, description, start time, end time, benefits, address, and categories.
+
+#### Patience During Scraping
+During the scraping process, the program retrieves information from each page, processes it, and saves it to a CSV file. Please be patient while the program is running, as it may take a few minutes or even longer to scrape all the necessary data. Additionally, ensure that your internet connection is stable to avoid interruptions during the scraping process.
+
 If you encounter any issues or have suggestions for improvement, feel free to open an issue on GitHub. Contributions are also welcome through pull requests.
 
 Thank you for using Engage-Campus-Labs-University-Webscraper!
