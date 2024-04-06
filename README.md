@@ -1,5 +1,5 @@
 # Engage-Campus-Labs-University-Webscraper
-Campus Labs is a web-based platform used by over 1,400 public and private colleges and universities to display information relating to collegiate organizations and events.
+Campus Labs is a web-based platform used by over 1,400 public and private [colleges and universities](https://changingthepresent.org/pages/list-of-campuslabs-page) to display information relating to collegiate organizations and events. 
 
 These Python programs are designed to scrape relevant organization and event details from Campus Labs University sites and store them in a CSV file.
 
