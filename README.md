@@ -65,18 +65,12 @@ These fields collectively provide comprehensive information about each organizat
 
 ### eventscraper.py
 
-Before running eventscraper.py, you need to retrieve the RSS URL for the function argument. This URL can be found at the bottom right corner of the Campus Engage site's event page.
-
-1. **Navigate to the Engage Site's Event Page**: Open a web browser and navigate to the event page of your university's Engage site.
-
-2. **Locate the RSS Feed Link**: Scroll down to the bottom right corner of the event page. You should find a link labeled "RSS" or "RSS Feed". Right-click on this link and select "Copy Link Address" or similar option depending on your browser.
-
 To run the `eventscraper.py` program, use the following command:
 
 ```bash
-python eventscraper.py <rss_url> [--output <output_file>]
+python eventscraper.py <base_url> [--output <output_file>]
 ```
-Replace `<rss_url>` with the RSS URL for the Engage site's event page **(Remember to enclose the URL in quotes)**, and `<output_file>` with the optional path to save the CSV file. If the `--output` argument is not provided, the CSV file will be saved in the "output" folder within the project directory by default.
+Go back to the homepage of the Campus Labs University site and copy the base URL. Replace `<base_url>` with this URL. **(Remember to enclose the URL in quotes)**, and `<output_file>` with the optional path to save the CSV file. If the `--output` argument is not provided, the CSV file will be saved in the "output" folder within the project directory by default.
 
 The fields chosen for eventscraper.py were selected based on my subjective relevance ranking of event details that are commonly available on the Engage site's event pages. These fields provide essential information about each event, including:
 
