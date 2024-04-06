@@ -1,9 +1,9 @@
 # Engage-Campus-Labs-University-Webscraper
 Campus Labs is a web-based platform used by over 1,400 public and private colleges and universities to display information relating to collegiate organizations and events.
 
-These Python programs are designed to scrape relevant organization and event details from the Campus Labs University site and store them in a CSV file.
+These Python programs are designed to scrape relevant organization and event details from Campus Labs University sites and store them in a CSV file.
 
-After wrestling with the intricacies of the React web app and sifting through outdated webscraping tools, I found myself at a dead end in my quest for info on university clubs and events. Luckily, after some time I stumbled upon an insightful [article](https://danielbeadle.net/post/2018-04-14-scraping-react-with-python/) that shed light on the annoying task of scraping React with Python. I expanded on the concept by implementing my own webscraping solution, and learned many new things along the way.
+After wrestling with the intricacies of scraping dynamic websites and sifting through outdated webscraping tools, I found myself at a dead end in my quest for info on university clubs and events. Luckily, after some time I stumbled upon an insightful [article](https://danielbeadle.net/post/2018-04-14-scraping-react-with-python/) that shed light on the annoying task of scraping React with Python. I expanded on the concept by implementing my own webscraping solution and ended up learning many new things along the way.
 
 ## Usage
 
