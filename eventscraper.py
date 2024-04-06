@@ -93,7 +93,8 @@ def scrape_json_data(url, index, csv_file):
     except Exception as e:
         print(f"An error occurred while scraping {url}: {e}")
 
-def main(rss_url, output_dir=None):
+def main(base_url, output_dir=None):
+    rss_url = f"{base_url}/events.rss"
     try:
         # Fetch events from the RSS feed
         events = fetch_rss_data(rss_url)
@@ -118,8 +119,8 @@ def main(rss_url, output_dir=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Scrape event data from an RSS feed.')
-    parser.add_argument('rss_url', type=str, help='URL of the RSS feed')
+    parser.add_argument('base_url', type=str, help='Base URL of the webpage')
     parser.add_argument('--output', type=str, help='Path to the output directory to save event data', default=None)
     args = parser.parse_args()
 
-    main(args.rss_url, args.output)
+    main(args.base_url, args.output)
