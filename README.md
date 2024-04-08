@@ -5,8 +5,6 @@ These Python programs are designed to scrape relevant organization and event det
 
 After wrestling with the intricacies of scraping dynamic websites and sifting through outdated webscraping tools and repositories, I found myself at a dead end in my quest for info on university clubs and events. Luckily, after some time I stumbled upon an insightful [article](https://danielbeadle.net/post/2018-04-14-scraping-react-with-python/) that shed light on the annoying task of scraping React with Python. I expanded on the concept by implementing my own webscraping solution and ended up learning many new things along the way.
 
-## Usage
-
 ### Prerequisites
 
 Before using this program, make sure you have Python installed on your system. You can download Python from the [official website](https://www.python.org/downloads/).
