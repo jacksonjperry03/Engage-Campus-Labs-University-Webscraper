@@ -10,8 +10,6 @@ from eventscraper import scrape_json_data as scrape_event_json_data
 from eventscraper import main as event_main
 
 
-# Now you can use these functions as needed
-
 def main(html_file_path, base_url, output_dir=None):
     try:
         # If output directory is not provided, default to 'output' folder in current directory
